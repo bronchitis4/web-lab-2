@@ -1,0 +1,75 @@
+<!-- Варіант 15
+Веб-сайт платформи для вивчення історії через інтерактивні події
+1. Розділи: "Хронологія", "Події", "Тестування". "Хронологія" містить часову шкалу з
+ключовими історичними подіями. "Події" дозволяють детально переглядати
+інформацію про події з текстом, зображеннями, картами та інтерактивними
+завданнями. "Тестування" відображає форму тестування зань користувача з історії
+вцілому та окремих історичних фактів.
+2. Використати Flexbox для побудови часової шкали -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation__menu">
+            <span class="logo"><a href="../index.html">LOGO</a></span>
+            <ul class="navigation__list">
+                <li class="list__item"><a href="chronology.html">Хронологія</a></li>
+                <li class="list__item"><a href="events.html">Події</a></li>
+                <li class="list__item"><a href="tests.html">Тестування</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="chronology__block">
+            <div class="chronology__block__header"><h1>Часова шкала</h1></div>
+            <div class="chronology__block__content">
+                <div class="chronology__flexbox">
+                <ul class="date__list">
+                    <li class="list__item__date">9ст</li>
+                    <li class="list__item__date">13ст</li>
+                    <li class="list__item__date">15ст</li>
+                    <li class="list__item__date">18ст</li>                        
+                    <li class="list__item__date">19ст</li>
+                    <li class="list__item__date">20ст</li>
+                </ul>
+                </div>
+                <div class="events__block">
+                        <!---ДИНИМІЧНА ВСТАВКА КОНТЕНТУ-->
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contact__information">
+            <h1>Зв'язатися з нами:</h1>
+            <ul>
+                <li><strong>Телефон:</strong><a href="tel:+380 63 720 86 24"> +380 63 720 86 24</a></li>
+                <li><strong>Електронна пошта:</strong> <a href="mailto:#"> info@gmail.com</a></li>
+                <li><strong>Адреса:</strong> <a href="#"> Львів, вул. Шевченка, 15, Україна</a></li>
+                <li><strong>Робочі години:</strong> <br>Пн-Пт: 09:00 - 18:00</li>
+            </ul>
+        </div>
+    </footer>   
+    <script src="../scripts/chronolody.js"></script>
+    <script src="../scripts/more.js"></script> 
+</body>
+</html>
+
+
+<!-- 
+<ul class="events__list">
+    <li class="list__item__events">Київська Русь</li>
+    <li class="list__item__events">Монгольська навала та Литва </li>
+    <li class="list__item__events">Козацька доба</li>
+    <li class="list__item__events">Національні рухи та автономія</li>
+    <li class="list__item__events">Революції та боротьба за незалежність</li>
+    <li class="list__item__events">Сучасна історія</li>
+</ul> -->

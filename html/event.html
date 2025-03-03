@@ -1,0 +1,75 @@
+<!-- Варіант 15
+Веб-сайт платформи для вивчення історії через інтерактивні події
+1. Розділи: "Хронологія", "Події", "Тестування". "Хронологія" містить часову шкалу з
+ключовими історичними подіями. "Події" дозволяють детально переглядати
+інформацію про події з текстом, зображеннями, картами та інтерактивними
+завданнями. "Тестування" відображає форму тестування зань користувача з історії
+вцілому та окремих історичних фактів.
+2. Використати Flexbox для побудови часової шкали -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation__menu">
+            <span class="logo"><a href="../index.html">LOGO</a></span>
+            <ul class="navigation__list">
+                <li class="list__item"><a href="chronology.html">Хронологія</a></li>
+                <li class="list__item"><a href="events.html">Події</a></li>
+                <li class="list__item"><a href="tests.html">Тестування</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <section class="current__article">
+            <div class="top__content__block">
+                <h1>HEADER</h1>
+            </div>
+            <div class="left__content__block">
+                <img width="70%" src="https://fs05.vseosvita.ua/050140bd-3adf-378x198.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cum quis recusandae magni. Repudiandae aliquid praesentium molestias, ut laboriosam quis quo ab eveniet officiis ea error excepturi, aperiam beatae temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas ratione tenetur totam similique tempora asperiores laudantium voluptatum vero saepe eos illum eligendi dolorem nisi, quasi odit error eius labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eaque repudiandae itaque necessitatibus impedit placeat quidem, non, neque, quaerat qui adipisci sint! Eius voluptate praesentium amet sapiente dolorum error tempore.</p>
+                <img width="70%" src="https://fs05.vseosvita.ua/050140bd-3adf-378x198.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cum quis recusandae magni. Repudiandae aliquid praesentium molestias, ut laboriosam quis quo ab eveniet officiis ea error excepturi, aperiam beatae temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas ratione tenetur totam similique tempora asperiores laudantium voluptatum vero saepe eos illum eligendi dolorem nisi, quasi odit error eius labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eaque repudiandae itaque necessitatibus impedit placeat quidem, non, neque, quaerat qui adipisci sint! Eius voluptate praesentium amet sapiente dolorum error tempore.</p>
+                <img width="70%" src="https://fs05.vseosvita.ua/050140bd-3adf-378x198.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cum quis recusandae magni. Repudiandae aliquid praesentium molestias, ut laboriosam quis quo ab eveniet officiis ea error excepturi, aperiam beatae temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas ratione tenetur totam similique tempora asperiores laudantium voluptatum vero saepe eos illum eligendi dolorem nisi, quasi odit error eius labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere eaque repudiandae itaque necessitatibus impedit placeat quidem, non, neque, quaerat qui adipisci sint! Eius voluptate praesentium amet sapiente dolorum error tempore.</p>
+           </div>
+            <div class="right__content__block">
+            </div>
+            <div class="bottom__content__block">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47748.13426747662!2d33.1703988685484!3d51.24746036083373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412a49f34896169f%3A0x3e094a67d3c4e9b2!2z0JrQvtC90L7RgtC-0L8sINCh0YPQvNGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA0MTYxNQ!5e0!3m2!1suk!2sua!4v1740773069526!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>           
+            </div>
+       <section class="comments__block">
+            <div class="create__comment__block">
+                <h1>Коментарі:</h1>
+                <form class="comment__form">
+                    <input class="name__input" type="text" placeholder="ім'я прізвище"><br>
+                    <textarea class="comment__input" name="comment"></textarea><br>
+                    <input type="submit" value="Опублікувати">
+                </form>
+            </div>
+       </section>
+    </section>
+    <div class="comments__list">
+         <!---ДИНИМІЧНА ВСТАВКА КОНТЕНТУ-->
+    </div>
+    </main>
+    <footer>
+        <div class="contact__information">
+            <h1>Зв'язатися з нами:</h1>
+            <ul>
+                <li><strong>Телефон:</strong><a href="tel:+380 63 720 86 24"> +380 63 720 86 24</a></li>
+                <li><strong>Електронна пошта:</strong> <a href="mailto:#"> info@gmail.com</a></li>
+                <li><strong>Адреса:</strong> <a href="#"> Львів, вул. Шевченка, 15, Україна</a></li>
+                <li><strong>Робочі години:</strong> <br>Пн-Пт: 09:00 - 18:00</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../scripts/comments.js"></script>
+    
+</body>
+</html>
