@@ -57,6 +57,7 @@ function openModalWindow(data) {
     const modalWindow = document.createElement('div');
     modalWindow.classList.add("background__modal__window");
     
+    modalWindow.style.top = window.scrollY + 'px';
     modalWindow.innerHTML += `
     <div class="background__modal__window">
         <div class="modal__window">
