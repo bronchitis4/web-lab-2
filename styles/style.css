@@ -27,7 +27,6 @@ body {
 
 main{
     flex-grow: 1; 
-    min-height: 100vh;
 }
 
 header {
@@ -653,4 +652,22 @@ input[type="submit"] {
     position: absolute;
     right: 0px;
     top: 0px;
+}
+
+.location__adress {
+    position: relative;
+    display: inline;
+}
+
+.disable {
+    display: none;
+}
+
+.location__modal {
+    bottom:0px ;
+    position:absolute;
+    padding: 20px;
+    width: 350px;
+    background-color: white;
+    box-shadow: 5px 5px 20px rgba(0,0, 0, 0.25);
 }

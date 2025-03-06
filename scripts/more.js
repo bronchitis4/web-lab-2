@@ -48,7 +48,6 @@ eventList.forEach((item, index) => {
             console.log(e.target.getAttribute('data-num'))
             openModalWindow(eventsData[index][parseInt(e.target.getAttribute('data-num'))])
         }
-       
     })
 })
 
@@ -59,14 +58,14 @@ function openModalWindow(data) {
     
     modalWindow.style.top = window.scrollY + 'px';
     modalWindow.innerHTML += `
-    <div class="background__modal__window">
-        <div class="modal__window">
-            <div class="close__window__button"></div>
-            <h1>${data.header}</h1>
-            <img src=${data.urlImage} alt="modal window image" width="60%">
-            <p>${data.text}</p>
-        </div>
-    </div>`
+        <div class="background__modal__window">
+            <div class="modal__window">
+                <div class="close__window__button"></div>
+                <h1>${data.header}</h1>
+                <img src=${data.urlImage} alt="modal window image" width="60%">
+                <p>${data.text}</p>
+            </div>
+        </div>`
     document.body.append(modalWindow); 
 
     
